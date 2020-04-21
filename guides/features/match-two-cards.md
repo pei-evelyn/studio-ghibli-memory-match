@@ -42,7 +42,7 @@ Let's get started!
     - The main thing to understand is that `local variables within functions are not accessible from outside the function`, so you must store information which all of your code needs access to in the global scope.
     - Here is a good article on scope related to ES5 [**Click Here**.](https://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting/)
   - So with that little exploration of scope out of the way, let's create the variables we will need to store the correct card element information!
-    - In the global scope of the `main.js` file, declare the following variables:
+    - In the global scope of the `script.js` file, declare the following variables:
       - firstCardClicked
         - This variable will be used to store the first card which is clicked each round.
       - secondCardClicked
