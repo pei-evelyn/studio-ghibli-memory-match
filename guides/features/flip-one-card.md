@@ -97,7 +97,7 @@ In this feature:
   - Now that your HTML and CSS are prepared for click functionality, it is time to add JavaScript!
     - Within the `index.html` file, do the following:
       - Add an id to the `main` element named `gameCards`
-    - Now open the `main.js` file and do the following:
+    - Now open the `script.js` file and do the following:
       - Attach a click event listener to the element with the `id` of `gameCards`
         - Give it a callback function named `handleClick`
       - Now declare the `handleClick` function with a single parameter, `event`.
@@ -105,7 +105,7 @@ In this feature:
     - Refresh the app, open the inspector,  and click on one of the cards:
       - Confirm that you received a console log of the mouse event.
         - If you did not, check your code for errors.
-          - Make sure you did not forget to add a script tag to the `index.html` page which has `main.js` as its source!
+          - Make sure you did not forget to add a script tag to the `index.html` page which has `script.js` as its source!
       - Check the `target` property of the `event` object, what element is stored at that property?
       ![event target](../images/event-target.png)
         - Note that placing the event listener on the parent element of the `card` elements allows the `click` events to `bubble` up.
