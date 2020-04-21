@@ -115,5 +115,4 @@ So now that we have a list of tasks to complete, let's get started!
   1. Update master with the new changes:
   - Note: you must `checkout` to the `master` branch and then `git pull origin master` to update your local `master` branch with the new code you just merged into the remote `master` branch.
   ![Update master](../post-feature/pull-new-changes.gif)
-![pull request from master](../post-feature/pull-request.gif)
   1. Go back to [Features](../../README.md#features), if you're still working through the project.
