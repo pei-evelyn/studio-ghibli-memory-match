@@ -6,12 +6,16 @@ Instructions - Dynamic Cards Refactor
 In this feature:
 - You will be adding the functionality to dynamically create the game cards.
 
+    - To clarify what this means, `Dynamically` creating the cards means that you use JavaScript to create the game cards structure instead of hard coded HTML elements.
+
 - There are no specific instructions for this Feature Set, as implementations can vary greatly, and we know you have the ability to do it on your own, but here are three requirements to consider:
   - You must recreate the entire HTML structure contained in the `<main>` element with the id of "gameCards"
       - example HTML structure:
         ![sample html](../images/html-structure.png)
   - The cards should be created dynamically when the application starts, and when the game is reset
   - When the game is reset, the old cards must be destroyed and replace with new cards
+
+- Make sure to take another look at the Dom Creation 4 exercise [**here**](https://github.com/Learning-Fuze/lfz-lessons/tree/master/exercises/javascript-dom-creation-4)!
 - When your game cards are being created dynamically on game start and game reset, move on to the `After Each Feature` section below.
 
 
