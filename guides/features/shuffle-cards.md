@@ -4,9 +4,9 @@ Instructions - Dynamic Cards Refactor
 ### Overview
 
 In this feature:
-- You will be adding the functionality to shuffle the game cards.
+- You will be adding the functionality to shuffle the game cards
 
-    - To clarify what this means, `shuffling` the cards means that the logo images should be placed on the cards when they are dynamically created.
+    - To clarify what this means, `shuffling` the cards means that the logo images should be placed on the cards randomly when they are dynamically created
 
 - There are no specific instructions for this Feature Set, as implementations can vary greatly, and we know you have the ability to do it on your own, but requirements are below:
   - The order of the logo images must be random when the game begins, and when the game is reset.
