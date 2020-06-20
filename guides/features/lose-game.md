@@ -1,23 +1,20 @@
-Instructions - Dynamic Cards Refactor
+Instructions - User Can Lose Game
 --
 
 ### Overview
 
 In this feature:
-- You will be adding the functionality to dynamically create the game cards.
+- You will be adding the functionality to have the user lose the game
 
-    - To clarify what this means, `Dynamically` creating the cards means that you use JavaScript to create the game cards structure instead of hard coded HTML elements.
+- There are no specific instructions for this Feature Set, as implementations can vary greatly, and we know you have the ability to do it on your own, but here are the requirement:
+  - There are two things which can cause the user to lose the game:
+    - The user misses ten matches during the game
+    - The user takes longer than three minutes to match all of the cards
+  - If the user loses the game:
+    - A modal should appear to let the user know they have lost and ask them if they want to play again.
+      - It might be a good idea to reuse the current win modal and alter the text as needed!
 
-- There are no specific instructions for this Feature Set, as implementations can vary greatly, and we know you have the ability to do it on your own, but here are the requirements:
-  - You must recreate the entire HTML structure contained in the `<main>` element with the id of "gameCards"
-      - example HTML structure:
-        ![sample html](../images/html-structure.png)
-  - The cards should be created dynamically when the application starts, and when the game is reset
-  - When the game is reset, the old cards must be destroyed and replaced with new cards
-
-- Make sure to take another look at the Dom Creation 4 exercise [**here**](https://github.com/Learning-Fuze/lfz-lessons/tree/master/exercises/javascript-dom-creation-4)!
-- When your game cards are being created dynamically on game start and game reset, move on to the `After Each Feature` section below.
-
+- When the user can lose the game if they miss ten matches or if three minutes elapses and a modal appears to inform them and let them play again, move on to the `After Each Feature` section below.
 
 ### After Each Feature
 

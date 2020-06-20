@@ -66,7 +66,8 @@ Before starting on this project, you will need to **fork** and then **clone** th
 - User Can Win Game - [Instructions](guides/features/win-condition.md)
 - User Can View Stats - [Instructions](guides/features/tracking-stats.md)
 - User Can Reset Game and Play Again - [Instructions](guides/features/resetting-game.md)
+- Functionality Update - Dynamic Card Creation - [Instructions](guides/features/dynamic-card-creation.md)
+- Functionality Update - Card Shuffling - [Instructions](guides/features/shuffle-cards.md)
 
 ### Bonus Feature / Challenge
-- Shuffling cards
-- Dynamically creating cards
+- User Can Lose Game - [Instructions](guides/features/lose-game.md)

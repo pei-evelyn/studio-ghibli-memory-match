@@ -1,4 +1,4 @@
-Instructions - Dynamic Cards Refactor
+Instructions - Shuffle Cards
 --
 
 ### Overview
