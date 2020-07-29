@@ -1,1 +1,58 @@
+/*Reset*/
 
+* {
+    margin: 0;
+}
+
+body {
+    height: 97vh;
+    background-image: url("../images/lfz-background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Header*/
+
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+/*Aside*/
+
+.stats-box {
+    background-color: #4fc5f3;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    margin: 1rem;
+}
+
+.stats-box > p {
+    font-size: 1.3rem;
+}
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-row {
+    height: 30%;
+}
+
+.card {
+    background-image: url("../images/lfz-card.jpg");
+    background-position: center;
+    background-size: cover;
+}
