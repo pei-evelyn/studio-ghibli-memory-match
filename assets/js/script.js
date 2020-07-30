@@ -1,5 +1,6 @@
 var gameCardsContainer = document.querySelector('#gameCards');
 var resetButton = document.querySelector('#reset-button');
+// var body = document.querySelector('body');
 
 var firstCardClicked = null;
 var secondCardClicked = null;
@@ -11,6 +12,43 @@ var matches = 0;
 
 var attempts = 0;
 var gamesPlayed = 0;
+
+// Dynamic Card Shuffle
+
+var cardFrontDeck = [
+    'card-front-1',
+    'card-front-2',
+    'card-front-3',
+    'card-front-4',
+    'card-front-5',
+    'card-front-6',
+    'card-front-7',
+    'card-front-8',
+    'card-front-9',
+    'card-front-1',
+    'card-front-2',
+    'card-front-3',
+    'card-front-4',
+    'card-front-5',
+    'card-front-6',
+    'card-front-7',
+    'card-front-8',
+    'card-front-9'
+]
+
+window.addEventListener('load', startGame);
+
+function startGame() {
+    var cardContainer = document.querySelectorAll('.card');
+    for (var j = 0; j < cardFrontDeck.length; j++) {
+        var frontCardDiv = document.createElement('div');
+        var backCardDiv = document.createElement('div');
+        frontCardDiv.classList.add('card-front', cardFrontDeck[j]);
+        backCardDiv.classList.add('card-back');
+        cardContainer[j].append(frontCardDiv, backCardDiv);
+    }
+}
+
 
 // Handle Click
 
@@ -88,6 +126,7 @@ function resetGame() {
     resetCards();
     var modal = document.querySelector('.modal-container');
     modal.classList.add('hidden');
+    startGame();
 }
 
 function resetCards() {
