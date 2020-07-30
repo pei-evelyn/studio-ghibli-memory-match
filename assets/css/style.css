@@ -86,40 +86,40 @@ main {
     background-image: url("../images/card-back5.gif");
 }
 
-.css-logo {
-    background-image: url('../images/css-logo.png');
+.card-front-1 {
+    background-image: url('../images/Card-front/card-front-1.jpg');
 }
 
-.docker-logo {
-    background-image: url('../images/docker-logo.jpg');
+.card-front-2 {
+    background-image: url('../images/Card-front/card-front-2.jpg');
 }
 
-.github-logo {
-    background-image: url('../images/gitHub-logo.png');
+.card-front-3 {
+    background-image: url('../images/Card-front/card-front-3.jpg');
 }
 
-.html-logo {
-    background-image: url('../images/html-logo.png');
+.card-front-4 {
+    background-image: url('../images/Card-front/card-front-4.jpg');
 }
 
-.js-logo {
-    background-image: url('../images/js-logo.png');
+.card-front-5{
+    background-image: url('../images/Card-front/card-front-5.jpg')
 }
 
-.mysql-logo {
-    background-image: url('../images/mysql-logo.jpg');
+.card-front-6 {
+    background-image: url('../images/Card-front/card-front-6.jpg');
 }
 
-.node-logo {
-    background-image: url('../images/node-logo.png');
+.card-front-7 {
+    background-image: url('../images/Card-front/card-front-7.jpg');
 }
 
-.php-logo {
-    background-image: url('../images/php-logo.jpeg');
+.card-front-8 {
+    background-image: url('../images/Card-front/card-front-8.jpg');
 }
 
-.react-logo {
-    background-image: url('../images/react-logo.png');
+.card-front-9 {
+    background-image: url('../images/Card-front/card-front-9.jpg');
 }
 
 
