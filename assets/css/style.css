@@ -136,13 +136,23 @@ main {
 }
 
 .modal-content {
-    background-color: #5ff5fa;
+    background-color: #10b7bd;
     height: 50%;
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+    flex-direction: column;
+}
+
+#reset-button {
+    padding: 0.7rem 2rem;
+    background-color: #686868;
+    border-color: #868686;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Hidden Classes*/
