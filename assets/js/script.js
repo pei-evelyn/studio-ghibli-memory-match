@@ -38,7 +38,7 @@ var cardFrontDeck = [
 
 window.addEventListener('load', startGame);
 
-function startGame() {
+function createCards() {
     var cardContainer = document.querySelectorAll('.card');
     for (var j = 0; j < cardFrontDeck.length; j++) {
         var frontCardDiv = document.createElement('div');
@@ -47,8 +47,22 @@ function startGame() {
         backCardDiv.classList.add('card-back');
         cardContainer[j].append(frontCardDiv, backCardDiv);
     }
+    console.log(cardContainer)
 }
 
+function shuffleCardArray(array) {
+    for (var s = 0; s < array.length; s++) {
+        var randomNum = Math.floor(Math.random() * array.length);
+        var randomCard = array[s];
+        array[s] = array[randomNum];
+        array[randomNum] = randomCard;
+    }
+}
+
+function startGame() {
+    shuffleCardArray(cardFrontDeck);
+    createCards();
+}
 
 // Handle Click
 
