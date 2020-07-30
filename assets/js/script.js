@@ -5,6 +5,9 @@ var secondCardClicked = null;
 var firstCardClasses = null;
 var secondCardClasses = null;
 
+var maxMatches = 9;
+var matches = 0;
+
 gameCardsContainer.addEventListener('click', handleClick);
 
 function handleClick(event) {
@@ -28,6 +31,11 @@ function handleClick(event) {
             gameCardsContainer.addEventListener('click', handleClick);
             firstCardClicked = null;
             secondCardClicked = null;
+            matches++;
+            if (matches === maxMatches) {
+                var modal = document.querySelector('.modal-container');
+                modal.classList.remove('hidden');
+            }
         } else {
             setTimeout(function(){
                 firstCardClicked.classList.remove('hidden');
@@ -36,8 +44,6 @@ function handleClick(event) {
                 firstCardClicked = null;
                 secondCardClicked = null;
             }, 1500)
-
         }
-
     }
 }
