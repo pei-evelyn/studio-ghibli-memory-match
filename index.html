@@ -3,39 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Match Game</title>
+    <title>Evelyn's Memory Match</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div class="start-page hidden">
+        <div class="start-page-content">
+            <h3>"Once you meet someone, you never really forget them."</h3>
+            <a href="">Enter</a>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <header class="col-12">
-                <h1>LFZ Memory Match</h1>
+                <h1>STUDIO GHIBLI MATCH</h1>
             </header>
         </div>
         <div class="row">
             <aside class="col-2">
-                <div class="stats-box">
+                <div class="stats-box stats-heading">
                     <p>Stats</p>
                 </div>
-                <div class="stats-box">
+                <div class="stats-box games-played-heading">
                     <p>Games Played</p>
                 </div>
-                <div class="stats-box">
-                    <p>0</p>
+                <div class="stats-box games-played-num">
+                    <p id="games-played-number">0</p>
                 </div>
-                <div class="stats-box">
+                <div class="stats-box attempts-heading">
                     <p>Attempts</p>
                 </div>
-                <div class="stats-box">
-                    <p>0</p>
+                <div class="stats-box attempts-num">
+                    <p id="attempts-number">0</p>
                 </div>
-                <div class="stats-box">
+                <div class="stats-box accuracy-heading">
                     <p>Accuracy</p>
                 </div>
-                <div class="stats-box">
-                    <p>0</p>
+                <div class="stats-box accuracy-num">
+                    <p id="accuracy-number">0%</p>
                 </div>
             </aside>
             <main id="gameCards" class="col-10">
