@@ -1,6 +1,7 @@
 var gameCardsContainer = document.querySelector('#gameCards');
 var resetButton = document.querySelector('#reset-button');
-// var body = document.querySelector('body');
+var modal = document.querySelector('.modal-container');
+var modalText = document.querySelector('.modal-text');
 
 var firstCardClicked = null;
 var secondCardClicked = null;
@@ -47,7 +48,6 @@ function createCards() {
         backCardDiv.classList.add('card-back');
         cardContainer[j].append(frontCardDiv, backCardDiv);
     }
-    console.log(cardContainer)
 }
 
 function shuffleCardArray(array) {
@@ -62,6 +62,7 @@ function shuffleCardArray(array) {
 function startGame() {
     shuffleCardArray(cardFrontDeck);
     createCards();
+    setTimeout(loseGame, 180000);
 }
 
 // Handle Click
@@ -93,7 +94,7 @@ function handleClick(event) {
             attempts++;
             displayStats();
             if (matches === maxMatches) {
-                var modal = document.querySelector('.modal-container');
+                modalText.textContent = "Congrats! You've won!";
                 modal.classList.remove('hidden');
             }
         } else {
@@ -107,6 +108,10 @@ function handleClick(event) {
                 displayStats();
             }, 1500)
         }
+    }
+
+    if (attempts === 10) {
+        loseGame();
     }
 }
 
@@ -138,7 +143,6 @@ function resetGame() {
     gamesPlayed++;
     displayStats();
     resetCards();
-    var modal = document.querySelector('.modal-container');
     modal.classList.add('hidden');
     startGame();
 }
@@ -151,3 +155,13 @@ function resetCards() {
 }
 
 resetButton.addEventListener('click', resetGame)
+
+
+// Lose Game
+
+
+
+function loseGame() {
+    modalText.textContent = "Oh no! You've Lost!";
+    modal.classList.remove('hidden');
+}

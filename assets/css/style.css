@@ -178,9 +178,11 @@ main {
 }
 
 .modal-content {
-    background-color: #10b7bd;
+    background-color: #e09583;
+    border: 2px solid #b1b1b1;
+    border-radius: 10px;
     height: 50%;
-    width: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -188,6 +190,9 @@ main {
     flex-direction: column;
 }
 
+.modal-text {
+    font-size: 2.5rem;
+}
 #reset-button {
     padding: 0.7rem 2rem;
     background-color: #686868;
