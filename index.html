@@ -3,130 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evelyn's Memory Match</title>
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>スタジオジブリ Studio Ghibli Memory Match</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="start-page hidden">
-        <div class="start-page-content">
-            <h3>"Once you meet someone, you never really forget them."</h3>
-            <a href="">Enter</a>
+        <div class="start-page-content row">
+            <div class="col 12">
+                <h2>"Once you meet someone, you never really forget them."</h2>
+                <a href="">Enter</a>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <header class="col-12">
-                <h1>STUDIO GHIBLI MATCH</h1>
+                <div class="catbus-gif"></div>
+                <h1>スタジオジブリ STUDIO GHIBLI</h1>
+                <div class="totoro-gif"></div>
             </header>
         </div>
         <div class="row">
             <aside class="col-2">
                 <div class="stats-box stats-heading">
-                    <p>Stats</p>
+                    <p>STATS</p>
                 </div>
                 <div class="stats-box games-played-heading">
-                    <p>Games Played</p>
+                    <p>GAMES PLAYED</p>
                 </div>
                 <div class="stats-box games-played-num">
                     <p id="games-played-number">0</p>
                 </div>
                 <div class="stats-box attempts-heading">
-                    <p>Attempts</p>
+                    <p>ATTEMPTS</p>
                 </div>
                 <div class="stats-box attempts-num">
                     <p id="attempts-number">0</p>
                 </div>
                 <div class="stats-box accuracy-heading">
-                    <p>Accuracy</p>
+                    <p>ACCURACY</p>
                 </div>
                 <div class="stats-box accuracy-num">
                     <p id="accuracy-number">0%</p>
                 </div>
+                <div class="audio-box">
+                    <audio class="audio-controls" controls autoplay loop>
+                        <source src="assets/audio/One_Summers_Day_From_Spirited_Away.mp3" type="audio/mpeg" >
+                    </audio>
+                </div>
             </aside>
-            <!-- <main id="gameCards" class="col-10">
-                <div class="row card-row">
-                    <div class="col-2 card one">
-                        <div class="card-front css-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card two">
-                        <div class="card-front docker-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card three">
-                        <div class="card-front github-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card four">
-                        <div class="card-front html-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card five">
-                        <div class="card-front js-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card six">
-                        <div class="card-front mysql-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                </div>
-                <div class="row card-row">
-                    <div class="col-2 card seven">
-                        <div class="card-front node-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card eight">
-                        <div class="card-front php-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card nine">
-                        <div class="card-front react-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card ten">
-                        <div class="card-front docker-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card eleven">
-                        <div class="card-front js-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card twelve">
-                        <div class="card-front mysql-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                </div>
-                <div class="row card-row">
-                    <div class="col-2 card thirteen">
-                        <div class="card-front css-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card fourteen">
-                        <div class="card-front html-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card fifteen">
-                        <div class="card-front react-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card sixteen">
-                        <div class="card-front node-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card seventeen">
-                        <div class="card-front php-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                    <div class="col-2 card eighteen">
-                        <div class="card-front github-logo"></div>
-                        <div class="card-back"></div>
-                    </div>
-                </div>
-            </main> -->
-
             <main id="gameCards" class="col-10">
                 <div class="row card-row">
                     <div class="col-2 card"></div>
